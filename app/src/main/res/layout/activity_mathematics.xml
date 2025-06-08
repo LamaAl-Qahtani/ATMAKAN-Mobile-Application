@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8E0FF"
+    tools:context=".Mathematics">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView91"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buttongray" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:gravity="center"
+        android:text="الرجاء حل المعادلة"
+        android:textColor="#5190C6"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView91"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="270dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="5  +  4  ="
+        android:textColor="#FA4381"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView91"
+        app:layout_constraintEnd_toEndOf="@+id/imageView91"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/imageView91"
+        app:layout_constraintTop_toTopOf="@+id/imageView91"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <ImageButton
+        android:id="@+id/imageButton46"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:rotationY="180"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/arrow" />
+
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="submitButton"
+        android:text="ارسال"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView91"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="222dp"
+        android:layout_height="60dp"
+        android:background="#4AFED70E"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColor="#FA4381"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView91"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/imageView91"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        app:layout_constraintVertical_bias="0.219" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

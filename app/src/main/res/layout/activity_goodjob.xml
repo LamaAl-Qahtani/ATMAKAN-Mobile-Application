@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF77CDFE"
+    tools:context=".Goodjob">
+
+    <ImageButton
+        android:id="@+id/imageButton41"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:rotationY="180"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/imageButton40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton41"
+        app:layout_constraintVertical_bias="0.198"
+        app:srcCompat="@drawable/congrats" />
+
+    <ImageButton
+        android:id="@+id/imageButton40"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="#02FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView49"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/girllll" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="176dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="54dp"
+        android:gravity="center"
+        android:text="أحسنت ياصديقي لقد قمت بعمل رائع"
+        android:textColor="#330B00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton40"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton40"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="@+id/imageButton40"
+        app:layout_constraintTop_toTopOf="@+id/imageButton40"
+        app:layout_constraintVertical_bias="0.112" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

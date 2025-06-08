@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloud2"
+    tools:context=".lerningmode">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cloud2"
+        android:orientation="vertical"
+        tools:context=".lerningmode"
+        tools:layout_editor_absoluteX="-34dp"
+        tools:layout_editor_absoluteY="173dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_back_white10_100"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/homebage"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    app:srcCompat="@drawable/ic_baseline_home_24" />
+
+                <ImageView
+                    android:id="@+id/lerningmode"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_back_white_100"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    app:srcCompat="@drawable/game" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="265dp"
+        android:layout_height="175dp"
+        android:background="#78CDFE"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/girllll" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="285dp"
+        android:layout_height="122dp"
+        android:background="#02FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645"
+        app:srcCompat="@drawable/buttongreen" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="285dp"
+        android:layout_height="122dp"
+        android:background="#02FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/buttonpink" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="73dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:srcCompat="@drawable/interactive" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="126dp"
+        android:layout_height="42dp"
+        android:freezesText="false"
+        android:text="تفاعلي"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="78dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:srcCompat="@drawable/emotions" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="285dp"
+        android:layout_height="122dp"
+        android:background="#08FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415"
+        app:srcCompat="@drawable/buttonyellow" />
+
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:srcCompat="@drawable/entertaining" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:text="ترفيهي"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:text="مشاعري"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="126dp"
+        android:layout_height="87dp"
+        android:gravity="center"
+        android:text="مرحبا صديقي سأكون معك في رحلتك التعليمية"
+        android:textColor="#330B00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="0.18" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

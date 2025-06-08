@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".chat.ChatParent">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancelbutton1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#F35246"
+            android:text="إنهاء الجلسة"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+    <LinearLayout
+        android:id="@+id/profile"
+        android:layout_marginStart="140dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:onClick="profileUserOnClick">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هيا الحميد "
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="#424242"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+   </LinearLayout>
+</RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chattingRecyclerview"
+        android:layout_above="@+id/bottombar"
+        android:layout_marginTop="10dp"/>
+<RelativeLayout
+    android:id="@+id/bottombar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:background="#687f"
+android:paddingTop="10dp"
+android:paddingBottom="10dp">
+
+<EditText
+    android:id="@+id/messageedittxt"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:backgroundTint="@android:color/transparent"
+    android:textSize="20sp"
+    android:layout_toEndOf="@+id/sendbtn"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="20dp"
+    android:hint ="اكتب هنا"
+    android:textColor="#535353"/>
+
+    <ImageView
+        android:id="@+id/sendbtn"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:rotationY="-183"
+        android:src="@drawable/ic_baseline_send_24"/>
+</RelativeLayout>
+</RelativeLayout>

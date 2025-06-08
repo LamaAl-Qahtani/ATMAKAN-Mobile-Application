@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminActivity">
+
+    <ImageView
+        android:id="@+id/imageView77"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/darkblue" />
+
+    <ImageView
+        android:id="@+id/imageView88"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView77"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="0sp"
+        android:layout_height="409dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sky" />
+
+    <ImageButton
+        android:id="@+id/imageButton53"
+        android:layout_width="318dp"
+        android:layout_height="125dp"
+        android:background="#00FFFFFF"
+        android:onClick="userSettingsOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/buttongray" />
+
+    <ImageButton
+        android:id="@+id/imageButton52"
+        android:layout_width="318dp"
+        android:layout_height="125dp"
+        android:background="#00FFFFFF"
+        android:onClick="statisticalReportOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton53"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:srcCompat="@drawable/buttongray" />
+
+    <ImageButton
+        android:id="@+id/imageButton54"
+        android:layout_width="318dp"
+        android:layout_height="125dp"
+        android:background="#00FFFFFF"
+        android:onClick="createNewtherapistOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton52"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:srcCompat="@drawable/buttongray" />
+
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="173dp"
+        android:layout_height="75dp"
+        android:text="ادارة حساب المستخدم"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton53"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton53"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton53"
+        app:layout_constraintTop_toTopOf="@+id/imageButton53" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تقرير احصائي"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton52"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton52"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton52"
+        app:layout_constraintTop_toTopOf="@+id/imageButton52" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="173dp"
+        android:layout_height="75dp"
+        android:text="اضافة حساب اخصائي"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton54"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton54"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/imageButton54"
+        app:layout_constraintTop_toTopOf="@+id/imageButton54" />
+
+    <ImageView
+        android:id="@+id/imageView90"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton53"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton53"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/imageButton53"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/imageView95"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton52"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton52"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/textView41"
+        app:layout_constraintTop_toTopOf="@+id/imageButton52"
+        app:srcCompat="@drawable/statistical_report" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton54"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton54"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/textView42"
+        app:layout_constraintTop_toTopOf="@+id/imageButton54"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="232dp"
+        android:layout_height="36dp"
+        android:text="الرجوع لتسجيل الدخول"
+        android:textAlignment="center"
+        android:textColor="#4281E1"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton54"
+        app:layout_constraintVertical_bias="0.317" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

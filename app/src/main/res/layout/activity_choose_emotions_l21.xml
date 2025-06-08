@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77CEFF"
+    tools:context=".ChooseEmotions_L2_1">
+
+    <ImageView
+        android:id="@+id/home2"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:src="@drawable/round_back_white10_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:src="@drawable/emotions"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home2"
+        app:layout_constraintEnd_toEndOf="@+id/home2"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/home2"
+        app:layout_constraintTop_toTopOf="@+id/home2"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <ImageView
+        android:id="@+id/imageView94"
+        android:layout_width="293dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@id/imageButton36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/home2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/girllll" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="120dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="لنسمع الصوت ونختر الاجابة الصحيحة"
+        android:textColor="#330B00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView94"
+        app:layout_constraintEnd_toEndOf="@+id/imageView94"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView94"
+        app:layout_constraintTop_toTopOf="@+id/imageView94"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:backgroundTint="#FBB53D"
+        android:onClick="playIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/imageButton38"
+        android:layout_width="155dp"
+        android:layout_height="151dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton36"
+        app:layout_constraintTop_toBottomOf="@+id/imageView94"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/angry" />
+
+    <ImageButton
+        android:id="@+id/imageButton37"
+        android:layout_width="155dp"
+        android:layout_height="151dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/imageButton9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/imageButton38"
+        app:srcCompat="@drawable/sad" />
+
+    <ImageButton
+        android:id="@+id/imageButton36"
+        android:layout_width="155dp"
+        android:layout_height="151dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton37"
+        app:layout_constraintEnd_toStartOf="@id/imageButton38"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView94"
+        app:layout_constraintVertical_bias="0.318"
+        app:srcCompat="@drawable/scary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

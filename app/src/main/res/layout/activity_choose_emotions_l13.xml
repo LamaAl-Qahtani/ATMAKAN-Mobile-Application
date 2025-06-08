@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77CEFF"
+    tools:context=".ChooseEmotions_L1_3">
+
+    <ImageView
+        android:id="@+id/home2"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:src="@drawable/round_back_white10_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:src="@drawable/emotions"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home2"
+        app:layout_constraintEnd_toEndOf="@+id/home2"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/home2"
+        app:layout_constraintTop_toTopOf="@+id/home2"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:backgroundTint="#FBB53D"
+        android:onClick="playIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:rotationY="180"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageButton
+        android:id="@+id/imageButton38"
+        android:layout_width="155dp"
+        android:layout_height="151dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton36"
+        app:layout_constraintTop_toBottomOf="@+id/home"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/scary" />
+
+    <ImageButton
+        android:id="@+id/imageButton37"
+        android:layout_width="155dp"
+        android:layout_height="151dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/imageButton9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton38"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@id/imageButton35"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageButton
+        android:id="@+id/imageButton36"
+        android:layout_width="155dp"
+        android:layout_height="151dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton35"
+        app:layout_constraintEnd_toStartOf="@id/imageButton38"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home"
+        app:layout_constraintVertical_bias="0.318"
+        app:srcCompat="@drawable/sad" />
+
+    <ImageButton
+        android:id="@+id/imageButton35"
+        android:layout_width="155dp"
+        android:layout_height="151dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/imageButton9"
+        app:layout_constraintEnd_toStartOf="@id/imageButton37"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton36"
+        app:layout_constraintVertical_bias="0.66999996"
+        app:srcCompat="@drawable/angry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
